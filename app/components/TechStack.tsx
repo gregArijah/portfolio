@@ -10,15 +10,14 @@ export default function TechStack() {
                 <ul className="list-disc list-inside">
                     <li>React</li>
                     <li>Next.js</li>
+                    <li>JavaScript</li>
                     <li>Typescript</li>
                     <li>Node.js</li>
                     <li>Express</li>
-                    <li>PostgreSQL</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
+                    <li>MongoDB</li>
+                    <li>MySQL</li>
+                    <li>GraphQL</li>
+                    <li>TailwindCSS</li>
                 </ul>
             </div>
         
