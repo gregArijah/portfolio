@@ -21,47 +21,16 @@ export default function Projects() {
             </div><br/>
             <div className="space-y-2">
                 <p className="text-l font-bold pb-2">Challenges and Assignments from Bootcamp</p>
-                <div className="space-y-2 flex flex-wrap justify-center">
-                    
-                    <p><br/>
-                        <a href="https://javatrol.herokuapp.com">Emperor's Dish Restaurant<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
-                    </p>
-                    <br/>
-                
-                    <p><br/>
-                        <a href="https://javatrol.herokuapp.com">eVie - Charging Station Finder<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
-                    </p>
-                    <br/>
-
-                    <p><br/>
-                        <a href="https://javatrol.herokuapp.com">Social Media API<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
-                    </p>
-                    <br/>  
-                                       
-                    <p><br/>
-                        <a href="https://javatrol.herokuapp.com">E-Commerce Backend<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
-                    </p>
-                    <br/> 
-                    
-                    <p><br/>
-                        <a href="https://javatrol.herokuapp.com">Weather Dashboard<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
-                    </p>
-                    <br/> 
-                    
-                    <p><br/>
-                        <a href="https://javatrol.herokuapp.com">Team Profile Generator<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
-                    </p>
-                    <br/> 
-                
-                    <p><br/>
-                        <a href="https://javatrol.herokuapp.com">Javascript Quiz<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
-                    </p>
-                    <br/>  
-                
-                    <p><br/>
-                        <a href="https://javatrol.herokuapp.com">Password Generator<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
-                    </p>
-                    
+                {/* <div className="space-y-2 flex flex-wrap justify-evenly"> */}
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8">
+                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">Emperor's Dish Restaurant<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
+                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">EVie - Charging Station Finder<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
+                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">Social Media API<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
+                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">E-Commerce Backend<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
+                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">Weather Dashboard<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
+                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">Team Profile Generator<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
+                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">Javascript Challenge<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
+                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">Password Generator<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a> 
                 </div>    
                 
             </div>
