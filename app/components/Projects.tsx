@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Projects() {
     return (
-        <main className="flex justify-between p-10 pl-20 pr-20">
+        <main className="flex flex-col justify-between p-10 pl-20 pr-20">
             <div className="space-y-2">
                 <p className="text-xl font-bold pb-2">Projects</p>
              
@@ -18,6 +18,52 @@ export default function Projects() {
                     <a href="https://github.com/gregArijah/"><Image src="/placeholder.jpeg" height="190" width="360" alt="projects"/></a>
                 </p> 
 
+            </div><br/>
+            <div className="space-y-2">
+                <p className="text-l font-bold pb-2">Challenges and Assignments from Bootcamp</p>
+                <div className="space-y-2 flex flex-wrap justify-center">
+                    
+                    <p><br/>
+                        <a href="https://javatrol.herokuapp.com">Emperor's Dish Restaurant<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
+                    </p>
+                    <br/>
+                
+                    <p><br/>
+                        <a href="https://javatrol.herokuapp.com">eVie - Charging Station Finder<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
+                    </p>
+                    <br/>
+
+                    <p><br/>
+                        <a href="https://javatrol.herokuapp.com">Social Media API<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
+                    </p>
+                    <br/>  
+                                       
+                    <p><br/>
+                        <a href="https://javatrol.herokuapp.com">E-Commerce Backend<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
+                    </p>
+                    <br/> 
+                    
+                    <p><br/>
+                        <a href="https://javatrol.herokuapp.com">Weather Dashboard<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
+                    </p>
+                    <br/> 
+                    
+                    <p><br/>
+                        <a href="https://javatrol.herokuapp.com">Team Profile Generator<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
+                    </p>
+                    <br/> 
+                
+                    <p><br/>
+                        <a href="https://javatrol.herokuapp.com">Javascript Quiz<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
+                    </p>
+                    <br/>  
+                
+                    <p><br/>
+                        <a href="https://javatrol.herokuapp.com">Password Generator<Image src="/placeholder.jpeg" height="150" width="150" alt="projects"/></a>
+                    </p>
+                    
+                </div>    
+                
             </div>
         </main>
     )
