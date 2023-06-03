@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Header from './components/Header'
 import About from './components/About'
 import TechStack from './components/TechStack'
+import Projects from './components/Projects'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       < Header />
       < About /> 
       < TechStack />
+      < Projects />
 
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
