@@ -9,7 +9,6 @@ export default function Navbar() {
                 <a href="#aboutMe">about_me</a>
                 <a href="#techStack">tech_stack</a> 
                 <a href="#projects">projects</a>
-                <a href="#resume">resume</a>
                 <a href="#contact">contact_me</a>
             </div>
         </main>
