@@ -4,15 +4,17 @@ import Header from './components/Header'
 import About from './components/About'
 import TechStack from './components/TechStack'
 import Projects from './components/Projects'
+import Contact from './components/Contact'
 
 export default function Home() {
   return (
-    <div className='display'>
+    <main className='display'>
       < Navbar /> 
       < Header />
       < About /> 
       < TechStack />
       < Projects />
-      </div>
+      < Contact />
+    </main>
   )
 }
