@@ -15,7 +15,7 @@ export default function Contact() {
             {linkedinIcon} <span>LinkedIn</span>
         </a>
         <a href="mailto:gregarijah@gmail.com" className="flex h-8 text-xl space-x-2">
-            {emailIcon} <span>E-mail</span>
+            {emailIcon} <span>Email</span>
         </a>
        
 

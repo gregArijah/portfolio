@@ -11,7 +11,7 @@ export default function Header() {
                 <p className="text-xl">Toronto, Canada</p>
             </div>
             <div>
-                <Image src="/placeholder.jpeg" width={200} height={200} alt="hello world"/>
+                <Image src="/images/avatar.png" width={400} height={400} alt="hello world"/>
             </div>
         </main>   
     )}
