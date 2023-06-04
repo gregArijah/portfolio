@@ -6,7 +6,7 @@ export default function Projects() {
             <div className="space-y-2">
                 <p className="text-xl font-bold pb-2">Projects</p>
              
-                <p>Javatrol is a web based conversational CNC programming tool developed by machinists for machinists. From its inception it was designed to be user friendly, intuitive and provide all the coulds that "if only this program could..."<br/>
+                <p>Javatrol is a web based conversational CNC programming tool developed by machinists for machinists. From its inception it was designed to be user friendly, intuitive and provide all the coulds that &ldquo; if only this program could...&rdquo;<br/>
                     <a href="https://javatrol.herokuapp.com"><Image src="/placeholder.jpeg" height="190" width="360" alt="projects"/></a>
                 </p>
                 <br/>  
