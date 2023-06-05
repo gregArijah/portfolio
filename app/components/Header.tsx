@@ -4,14 +4,14 @@ import Image from "next/image"
 export default function Header() {
     
     return (
-        <main className="flex justify-between p-10 pl-20 pr-20" >
-            <div className="space-y-2">
-                <p className="text-4xl font-bold pb-2">Greg Arijah</p>
-                <p className="text-xl">Software Developer</p>
-                <p className="text-xl">Toronto, Canada</p>
+        <main className="flex justify-between p-5" >
+            <div className="flex flex-col justify-center">
+                <p className="text-lg font-bold pb-2 pt-8">Greg Arijah</p>
+                <p className="text-xs">Software Developer</p>
+                <p className="text-xs">Toronto, Canada</p>
             </div>
             <div>
-                <Image src="/images/avatar.png" width={400} height={400} alt="hello world"/>
+                <Image src="/images/avatar.png" width={200} height={200} alt="hello world"/>
             </div>
         </main>   
     )}
