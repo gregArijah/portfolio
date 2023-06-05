@@ -8,14 +8,15 @@ import Contact from './components/Contact'
 
 export default function Home() {
   return (
-    <main className='display'>
+    <main>
       < Navbar /> 
-      <br/>
-      < Header />
-      < About /> 
-      < TechStack />
-      < Projects />
-      < Contact />
+      <div className=''>
+        < Header />
+        < About /> 
+        < TechStack />
+        < Projects />
+        < Contact />
+      </div> 
     </main>
   )
 }
