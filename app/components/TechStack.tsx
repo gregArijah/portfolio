@@ -3,7 +3,7 @@ export default function TechStack() {
 
 
     return (
-        <main className="flex justify-between p-10 pl-20 pr-20">
+        <main className="flex justify-between p-10 pl-20 pr-20" id="tech">
             <div className="space-y-2">
                 <p className="text-xl font-bold pb-2">Tech Stack</p>
                 <p className="text-xl">I have experience with the following technologies:</p>

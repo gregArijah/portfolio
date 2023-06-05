@@ -10,6 +10,7 @@ export default function Home() {
   return (
     <main className='display'>
       < Navbar /> 
+      <br/>
       < Header />
       < About /> 
       < TechStack />

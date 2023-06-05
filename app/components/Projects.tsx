@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Projects() {
     return (
-        <main className="flex flex-col justify-between p-10 pl-20 pr-20">
+        <main className="flex flex-col justify-between p-10 pl-20 pr-20" id="projects">
             <div className="space-y-2">
                 <p className="text-xl font-bold pb-2">Projects</p>
              

@@ -2,7 +2,7 @@ import { twitterIcon, linkedinIcon, githubIcon, emailIcon } from '../icons';
 
 export default function Contact() {
   return (
-    <main className='flex space-x-24 justify-center'>
+    <main className='flex space-x-24 justify-center' id="contact" >
         <hr />
       
         <a href="https://twitter.com/gregarijah" className="flex h-8 text-xl space-x-2" >
