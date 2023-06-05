@@ -3,11 +3,10 @@ export default function TechStack() {
 
 
     return (
-        <main className="flex justify-between p-10 pl-20 pr-20" id="tech">
-            <div className="space-y-2">
-                <p className="text-xl font-bold pb-2">Tech Stack</p>
-                <p className="text-xl">I have experience with the following technologies:</p>
-                <ul className="list-disc list-inside">
+        <main className="flex flex-col justify-between p-5 space-y-2" id="tech">
+                <p className="text-md font-bold">Tech Stack</p>
+                <p className="text-sm">I have experience with the following technologies:</p>
+                <ul className="list-disc list-inside text-sm">
                     <li>React</li>
                     <li>Next.js</li>
                     <li>JavaScript</li>
@@ -19,8 +18,6 @@ export default function TechStack() {
                     <li>GraphQL</li>
                     <li>TailwindCSS</li>
                 </ul>
-            </div>
-        
         </main>   
     )
 }
