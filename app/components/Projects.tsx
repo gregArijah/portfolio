@@ -6,7 +6,7 @@ export default function Projects() {
     
                 <p className="text-md font-bold">Projects</p>
                 <p className="text-sm"><span className="font-bold">Javatrol</span> is a web based conversational CNC programming tool developed by machinists for machinists. From its inception it was designed to be user friendly, intuitive and provide all the coulds that &lsquo; if only this program could...&rdquo;<br/>
-                    <a href="https://javatrol.herokuapp.com"><Image src="/placeholder.jpeg" height="190" width="360" alt="projects"/></a>
+                    <a href="https://javatrol.herokuapp.com"><Image src="/images/javatrol.jpeg" className="rounded" height="190" width="360" alt="projects"/></a>
                 </p>
      
                 <p className="text-sm"> <span className="font-bold">Nanji</span> is a web based workforce management application. The initial release of the app will focus mainly on calculating the number of hours a given employee has worked over a selected period of time.<br/>
