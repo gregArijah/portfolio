@@ -11,7 +11,7 @@ export default function TechStack() {
                     <li>Next.js</li>
                     <li>JavaScript</li>
                     <li>Typescript</li>
-                    <li>Node.js</li>
+                    <li>Node.js<a href="https://www.flaticon.com/free-icons/nodejs" title="nodejs icons">Nodejs icons created by Freepik - Flaticon</a></li>
                     <li>Express</li>
                     <li>MongoDB</li>
                     <li>MySQL</li>

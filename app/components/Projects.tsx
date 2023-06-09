@@ -20,14 +20,14 @@ export default function Projects() {
             
                 <p className="text-sm font-bold">Challenges and Assignments from Bootcamp</p>
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 overflow-x-auto text-xs space-x-2 space-y-2">
-                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">Emperor&apos;s Dish Restaurant<Image src="/images/emperors_dish.png" className="w-auto h-auto" height="350" width="350" alt="projects"/></a>
-                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">EVie - Charging Station Finder<Image src="/images/evie.jpeg" className="w-auto  h-auto" height="350" width="350" alt="projects"/></a>
-                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">Social Network API<Image src="/images/social_network_api.jpeg" className="w-auto h-auto" height="350" width="350" alt="projects"/></a>
-                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">E-Commerce Backend<Image src="/images/ecommerce_backend.jpeg" className="w-auto h-auto" height="350" width="350" alt="projects"/></a>
-                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">Weather Dashboard<Image src="/images/weather_dashboard.jpeg" className="w-auto h-auto" height="350" width="350" alt="projects"/></a>
-                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">Team Profile Generator<Image src="/images/team_profile.jpeg" className="w-auto h-auto" height="350" width="350" alt="projects"/></a>
-                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">Javascript Challenge<Image src="/images/coding_quiz.jpeg" className="w-auto h-auto" height="350" width="350" alt="projects"/></a>
-                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">Password Generator<Image src="/images/password_generator.jpeg" className="w-auto h-auto" height="350" width="350" alt="projects"/></a> 
+                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">Emperor&apos;s Dish Restaurant<Image src="/images/projects/emperors_dish.png" className="w-auto h-auto" height="350" width="350" alt="projects"/></a>
+                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">EVie - Charging Station Finder<Image src="/images/projects/evie.jpeg" className="w-auto  h-auto" height="350" width="350" alt="projects"/></a>
+                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">Social Network API<Image src="/images/projects/social_network_api.jpeg" className="w-auto h-auto" height="350" width="350" alt="projects"/></a>
+                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">E-Commerce Backend<Image src="/images/projects/ecommerce_backend.jpeg" className="w-auto h-auto" height="350" width="350" alt="projects"/></a>
+                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">Weather Dashboard<Image src="/images/projects/weather_dashboard.jpeg" className="w-auto h-auto" height="350" width="350" alt="projects"/></a>
+                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">Team Profile Generator<Image src="/images/projects/team_profile.jpeg" className="w-auto h-auto" height="350" width="350" alt="projects"/></a>
+                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">Javascript Challenge<Image src="/images/projects/coding_quiz.jpeg" className="w-auto h-auto" height="350" width="350" alt="projects"/></a>
+                    <a className="flex flex-col justify-between"href="https://javatrol.herokuapp.com">Password Generator<Image src="/images/projects/password_generator.jpeg" className="w-auto h-auto" height="350" width="350" alt="projects"/></a> 
                 </div>    
         </main>
     )
