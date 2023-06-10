@@ -79,9 +79,9 @@ export default function Projects() {
                 })}
             
                 <p className="text-sm font-bold">Challenges and Assignments from Bootcamp</p>
-                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 overflow-x-auto text-xs space-x-2 space-y-2">
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 text-xs gap-x-2 gap-y-2">
                     {bootcamp.map((project, index) => {
-                        return ( <a key={index} className="flex flex-col justify-between"href={project.link}><span className="font-normal">{project.name}</span><Image src={project.image} className="w-auto h-auto" height="350" width="350" alt="projects"/></a>)
+                        return ( <a key={index} className="flex flex-col justify-stretch"href={project.link}><span className="font-normal">{project.name}</span><Image src={project.image} className="w-auto h-auto" height="350" width="350" alt="projects"/></a>)
                     })}
                 </div>    
         </main>
