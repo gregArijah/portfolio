@@ -73,7 +73,7 @@ export default function Projects() {
                     
                 {projects.map((project, index) => {
                     return ( 
-                        <p className="text-sm"><span className="font-bold">{project.name}</span> {project.description}<br/>
+                        <p key ={index} className="text-sm"><span className="font-bold">{project.name}</span> {project.description}<br/>
                             <a href={project.link}><Image src={project.image} className="rounded" height="190" width="360" alt="projects"/></a>
                         </p>)
                 })}
@@ -81,7 +81,7 @@ export default function Projects() {
                 <p className="text-sm font-bold">Challenges and Assignments from Bootcamp</p>
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 overflow-x-auto text-xs space-x-2 space-y-2">
                     {bootcamp.map((project, index) => {
-                        return ( <a className="flex flex-col justify-between"href={project.link}><span className="font-normal">{project.name}</span><Image src={project.image} className="w-auto h-auto" height="350" width="350" alt="projects"/></a>)
+                        return ( <a key={index} className="flex flex-col justify-between"href={project.link}><span className="font-normal">{project.name}</span><Image src={project.image} className="w-auto h-auto" height="350" width="350" alt="projects"/></a>)
                     })}
                 </div>    
         </main>
