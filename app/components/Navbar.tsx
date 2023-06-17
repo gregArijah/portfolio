@@ -3,8 +3,8 @@
 export default function Navbar() {
 
     return (
-        <main className="flex flex-row space-x-3 p-2 w-screen text-xs justify-end fixed top-0 bg-zinc-300">
-                <a href="#about">about_me</a>
+        <main className="flex space-x-3 p-2 sm:px-24 w-screen justify-end text-xs left-0 right-0 fixed bg-zinc-300">
+                <a href="#about">about_me</a> 
                 <a href="#tech">tech_stack</a> 
                 <a href="#projects">projects</a>
                 <a href="#contact">contact_me</a>

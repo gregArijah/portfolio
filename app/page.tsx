@@ -8,15 +8,14 @@ import Contact from './components/Contact'
 
 export default function Home() {
   return (
-    <main>
-      < Navbar /> 
-      <div className=''>
-        < Header />
-        < About /> 
-        < TechStack />
-        < Projects />
-        < Contact />
-      </div> 
+    <main className='sm:px-24'>
+      < Navbar />   
+      < Header />
+      < About /> 
+      < TechStack />
+      < Projects />
+      < Contact />
+       
     </main>
   )
 }
