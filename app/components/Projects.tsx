@@ -10,10 +10,10 @@ export default function Projects() {
                     link: "https://javatrol.herokuapp.com",
                 },
                 {
-                    name: "Nanji",
-                    description: "is a web based workforce management application. The initial release of the app will focus mainly on calculating the number of hours a given employee has worked over a selected period of time.",
-                    image: "/placeholder.jpeg",
-                    link: "https://nanji-gregarijah.vercel.app/"
+                    name: "Veleron",
+                    description: "is a web based attendance and time tracking app; a connected punchclock. The initial release of the app will focus mainly on calculating the number of hours a given employee has worked over a selected period of time.",
+                    image: "/images/projects/veleron8.png",
+                    link: "https://veleron.vercel.app/"
                 },
                 {
                     name: "MotoMetrix",
@@ -73,9 +73,11 @@ export default function Projects() {
                     
                 {projects.map((project, index) => {
                     return ( 
-                        <p key ={index} className="text-sm"><span className="font-bold">{project.name}</span> {project.description}<br/>
+                        <div  key ={index} className="w-full">
+                            <p className="text-sm"><span className="font-bold">{project.name}</span> {project.description}</p>
                             <a href={project.link}><Image src={project.image} className="rounded" height="190" width="360" alt="projects"/></a>
-                        </p>)
+                        </div>
+                        )
                 })}
             
                 <p className="text-sm font-bold">Challenges and Assignments from Bootcamp</p>
