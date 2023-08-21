@@ -18,7 +18,7 @@ export default function Projects() {
                 {
                     name: "MotoMetrix",
                     description: "is an arduino project which collects data from sensors on a vehicle and displays it to a LCD screen. During the pandemic I decided to learn to weld, after successfully building a go-kart I built a digital dashboard using the arduino-nano controller.",
-                    image: "/placeholder.jpeg",
+                    image: "/images/projects/comingsoon.jpeg",
                     link: "https://github.com/gregArijah/digital-dashboard/"
                 },
             ];
@@ -27,42 +27,42 @@ export default function Projects() {
                 {
                     name: "Emperor's Dish Restaurant",
                     image: "/images/projects/emperors_dish.png",
-                    link: "link to site here"
+                    link: "https://emperors-dish-app.herokuapp.com/"
                 },
                 {
                     name: "EVie - Charging Station Finder",
                     image: "/images/projects/evie.jpeg",
-                    link: "link to site here"
+                    link: "https://yerimechoi.github.io/eVie/"
                 },
                 {
                     name: "Social Network API",
                     image: "/images/projects/social_network_api.jpeg",
-                    link: "link to site here"
+                    link: "https://drive.google.com/file/d/1RoycjaPsk8E1S74Ppugd6MisYlxK5ODc/view"
                 },
                 {
                     name: "E-Commerce Backend",
                     image: "/images/projects/ecommerce_backend.jpeg",
-                    link: "link to site here"
+                    link: "https://drive.google.com/file/d/1GUHcmWtSXxZi5MqFKBizJhMTyS2hSbhb/view"
                 },
                 {
                     name: "Weather Dashboard",
                     image: "/images/projects/weather_dashboard.jpeg",
-                    link: "link to site here"
+                    link: "https://gregarijah.github.io/challenge-6-weather-dashboard/"
                 },
                 {
                     name: "Team Profile Generator",
                     image: "/images/projects/team_profile.jpeg",
-                    link: "link to site here"
+                    link: "https://drive.google.com/file/d/1LF9vyzf8_zUaKiBWMi5ACeH7eV0KrdZE/view"
                 },
                 {
                     name: "JavaScript Challenge",
                     image: "/images/projects/coding_quiz.jpeg",
-                    link: "link to site here"
+                    link: "https://gregarijah.github.io/challenge-4-javascript-quiz/"
                 },
                 {
                     name: "Password Generator",
                     image: "/images/projects/password_generator.jpeg",
-                    link: "link to site here"
+                    link: "https://gregarijah.github.io/challenge-3-password-generator/develop/"
                 },
             ];
 
