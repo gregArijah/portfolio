@@ -13,14 +13,38 @@ export default function Home() {
   
 
   return (
-    <main className='sm:px-24'>
-      < Navbar />   
-      < Header />
-      < About /> 
-      < TechStack />
-      < Projects />
-      < Contact />
-       
+    <main>
+        {/* small & medium screen layout */}
+        <div className='sm:px-24 lg:hidden'>
+            < Navbar />   
+            < Header />
+            < About /> 
+            < TechStack />
+            < Projects />
+            < Contact />
+        </div>
+        {/* large screen layout */}
+        <div className='hidden lg:block'>
+             
+            <div className='flex px-20 py-10 space-x-10'>
+                <section className='w-5/12'>
+
+                    <div className='fixed'>
+                      < Header />
+                      < Navbar />
+                      < Contact />
+                    </div> 
+                </section>
+                <section className='w-7/12 pt-5 float-right'>
+                    < About /> 
+                    < hr className= 'border-gray-500 border mx-5'/>
+                    < TechStack />
+                    < hr className= 'border-gray-500 border mx-5'/>
+                    < Projects />
+                </section>
+            </div>
+            
+        </div>
     </main>
   )
 }

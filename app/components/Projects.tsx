@@ -8,18 +8,21 @@ export default function Projects() {
                     description: "is a web based conversational CNC programming tool developed by machinists for machinists. From its inception it was designed to be user friendly, intuitive and provide all the coulds that \"if only this program could...\"",
                     image: "/images/projects/javatrol.jpeg",
                     link: "https://javatrol.herokuapp.com",
+                    tech: ["Javascript","React", "MongoDB", "Express", "Node.js", "HeadlessUI", "TailwindCSS"],
                 },
                 {
                     name: "Veleron",
                     description: "is a web based attendance and time tracking app; a connected punchclock. The initial release of the app will focus mainly on calculating the number of hours a given employee has worked over a selected period of time.",
                     image: "/images/projects/veleron8.png",
-                    link: "https://veleron.vercel.app/"
+                    link: "https://veleron.vercel.app/",
+                    tech: ["Typescript", "Next.js", "Prisma", "PostgreSQL", "Node.js","NextAuth.js", "MaterialUI", "TailwindCSS"],
                 },
                 {
                     name: "MotoMetrix",
                     description: "is an arduino project which collects data from sensors on a vehicle and displays it to a LCD screen. During the pandemic I decided to learn to weld, after successfully building a go-kart I built a digital dashboard using the arduino-nano controller.",
                     image: "/images/projects/comingsoon.jpeg",
-                    link: "https://github.com/gregArijah/digital-dashboard/"
+                    link: "https://github.com/gregArijah/digital-dashboard/",
+                    tech: ["C++", "Arduino"]
                 },
             ];
 
@@ -73,9 +76,17 @@ export default function Projects() {
                     
                 {projects.map((project, index) => {
                     return ( 
-                        <div  key ={index} className="w-full">
-                            <p className="text-sm"><span className="font-bold">{project.name}</span> {project.description}</p>
-                            <a href={project.link}><Image src={project.image} className="rounded" height="190" width="360" alt="projects"/></a>
+                        <div  key ={index} className="w-full space-y-1">
+                            <div className="flex flex-row">
+                                <p className="text-sm"><span className="font-bold">{project.name}</span> {project.description}</p>
+                                <p><a href={project.link}><Image src={project.image} className="rounded" height="600" width="600" alt="projects"/></a></p>
+                            </div>
+                            <p className="pb-6"> 
+                                {project.tech && project.tech.map((tech, index) => {
+                                    return (<span key={index} className="text-xs font-bold bg-blue-900 rounded-md p-1 mr-1">{tech} </span>)
+                                })}
+                            </p>
+                            
                         </div>
                         )
                 })}
