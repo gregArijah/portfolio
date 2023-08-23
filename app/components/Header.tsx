@@ -17,13 +17,13 @@ export default function Header() {
                 </div>
             </div>   
             {/* large screens */}
-            <div className="hidden lg:flex justify-between pl-5 pt-5" >
+            <div className="hidden lg:flex justify-between pl-5 pt-5 space-x-4" >
                 <div className="flex flex-col justify-center space-y-3">
-                    <p className="text-3xl font-bold pb-1 pt-8">Greg Arijah</p>
+                    <p className="text-4xl font-bold pb-1 pt-8">Greg Arijah</p>
                     
                     <div className="space-y-1">
-                        <p className="text-md">Software Developer</p>
-                        <p className="text-md">Toronto, Canada</p>
+                        <p className="text-xl">Software Developer</p>
+                        <p className="text-xl">Toronto, Canada</p>
                     </div>
                 </div>
                 <div>

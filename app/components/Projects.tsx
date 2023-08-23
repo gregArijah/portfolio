@@ -12,7 +12,7 @@ export default function Projects() {
                     image: "/images/projects/javatrol.jpeg",
                     link: "https://javatrol.herokuapp.com",
                     github: "https://github.com/gregArijah/cnc-gcode-generator",
-                    tech: ["Javascript","React", "MongoDB", "Express", "Node.js", "HeadlessUI", "TailwindCSS"],
+                    tech: ["Javascript","React","Mongoose", "MongoDB", "Express", "Node.js", "HeadlessUI", "TailwindCSS"],
                 },
                 {
                     name: "Veleron",
@@ -94,9 +94,9 @@ export default function Projects() {
                         <div  key ={index} className="w-full space-y-1">
                             <p className="font-bold space-x-2"><span>{project.name}</span> <span><Link href={project.link}>{internetIcon} </Link><Link href={project.github}>{githubIcon}</Link></span></p>
                             <div className="flex flex-col sm:flex-row">    
-                                <p className="text-sm">{project.name} {project.description}</p>
-                                <p className="hidden sm:flex"><Image src={project.image} className="rounded" height="600" width="600" alt="projects"/></p>
-                                <p className="sm:hidden"><Image src={project.image} className="rounded" height="350" width="350" alt="projects"/></p>
+                                <p className="text-sm text-justify mr-3">{project.name} {project.description}</p>
+                                <p className="hidden sm:flex border border-black rounded"><Image src={project.image} className="rounded" height="600" width="600" alt="projects"/></p>
+                                <p className="sm:hidden border border-black rounded"><Image src={project.image} className="rounded" height="350" width="350" alt="projects"/></p>
                             </div>
                             <p className="pb-6"> 
                                 {project.tech && project.tech.map((tech, index) => {

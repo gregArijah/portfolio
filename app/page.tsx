@@ -26,7 +26,7 @@ export default function Home() {
         {/* large screen layout */}
         <div className='hidden lg:block'>
              
-            <div className='flex px-20 py-10 space-x-10'>
+            <div className='flex px-20 py-10 space-x-2'>
                 <section className='w-5/12'>
 
                     <div className='fixed'>
