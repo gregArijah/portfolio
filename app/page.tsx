@@ -16,12 +16,12 @@ export default function Home() {
     <main>
         {/* small & medium screen layout */}
         <div className='sm:px-24 lg:hidden'>
-            < Navbar />   
+            < Navbar />
             < Header />
             < About /> 
             < TechStack />
             < Projects />
-            < Contact />
+            
         </div>
         {/* large screen layout */}
         <div className='hidden lg:block'>

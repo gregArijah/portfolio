@@ -105,7 +105,7 @@ export default function Projects() {
                             <div className="flex flex-col sm:flex-row space-y-2">    
                                 <div className="flex flex-col space-y-2">
                                     <p className="text-sm text-justify mr-3">{project.name} {project.description}</p>
-                                    <p>
+                                    <p className="hidden sm:block">
                                         {project.tech.map((tech, index) => {
                                             return (<span key={index} className="text-xs font-bold bg-blue-900 rounded-md p-1 mr-1">{tech} </span>)
                                         })}
@@ -113,6 +113,11 @@ export default function Projects() {
                                 </div>
                                 <p className="h-min hidden sm:flex border border-black rounded"><Image src={project.image} className="rounded" height="600" width="600" alt="projects"/></p>
                                 <p className="sm:hidden max-w-max border border-black rounded"><Image src={project.image} className="rounded" height="350" width="350" alt="projects"/></p>
+                                <p className="block sm:hidden">
+                                        {project.tech.map((tech, index) => {
+                                            return (<span key={index} className="text-xs font-bold bg-blue-900 rounded-md p-1 mr-1">{tech} </span>)
+                                        })}
+                                    </p>
                             </div>
                             
                             
