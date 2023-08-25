@@ -25,7 +25,7 @@ export default function Projects() {
                 {
                     name: "MotoMetrix",
                     description: "is a digital dashboard; an arduino project which collects and displays sensor data. During the pandemic I learned to weld, and after a successful go-kart build, I built a dashboard using the arduino controller.",
-                    image: "/images/projects/comingsoon.jpeg",
+                    image: "/images/projects/speedway.jpg",
                     link: "https://github.com/gregArijah/digital-dashboard/",
                     github: "https://github.com/gregArijah/digital-dashboard/",
                     tech: ["C++", "Arduino"]
@@ -115,7 +115,7 @@ export default function Projects() {
                                 <p className="sm:hidden max-w-max border border-slate-400 rounded"><Image src={project.image} className="rounded" height="350" width="350" alt="projects"/></p>
                                 <p className="block sm:hidden">
                                         {project.tech.map((tech, index) => {
-                                            return (<span key={index} className="text-xs font-bold bg-slate-300 text-slate-800 rounded-md p-1 mr-1">{tech} </span>)
+                                            return (<span key={index} className="text-xs font-bold bg-slate-300 text-slate-800 rounded-md p-0.5 mr-1">{tech} </span>)
                                         })}
                                     </p>
                             </div>
