@@ -5,7 +5,7 @@ import Contact from "./Contact"
 export default function Header() {
     
     return (
-        <main>
+        <div>
             {/* small and medium screens */}
             <div className="lg:hidden flex justify-between pl-5 pt-5" >
                 <div className="flex flex-col justify-between py-3">    
@@ -38,6 +38,6 @@ export default function Header() {
                 </div>
             </div>   
 
-        </main>
+        </div>
     )}
 

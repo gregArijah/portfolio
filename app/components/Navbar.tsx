@@ -14,7 +14,7 @@ export default function Navbar() {
     }, [])
 
     return (
-        <main>
+        <div>
             {/* small and medium screens */}
             <div className={`lg:hidden flex space-x-3 p-2 sm:px-24 w-screen justify-end text-xs left-0 right-0 fixed ${colorScheme == 'dark' ? 'bg-zinc-900': 'bg-zinc-300'}`}>
                     <a href="#about">about_me</a> 
@@ -29,6 +29,6 @@ export default function Navbar() {
                     <a href="#projects">projects</a>
             </div>
 
-        </main>
+        </div>
     )
 }

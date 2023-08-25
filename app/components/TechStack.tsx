@@ -4,7 +4,7 @@ export default function TechStack() {
 
 
     return (
-        <main className="flex flex-col justify-between p-5 space-y-2" id="tech">
+        <div className="flex flex-col justify-between p-5 space-y-2" id="tech">
                 <p className="text-md font-bold">Tech Stack</p>
                 <p className="text-sm">I have experience with the following technologies:</p>
                 <div className="grid grid-cols-6 md:grid-cols-12 lg:grid-cols-12 text-sm gap-x-4 sm:gap-x-2 gap-y-2 w-11/12 sm:w-full md:hidden">
@@ -35,6 +35,6 @@ export default function TechStack() {
                     <Image src="/images/techstack/tailwind.png" height="64" width="64" alt=""/>
                     <Image src="/images/techstack/arduino.png" height="64" width="64" alt=""/>
                 </div>
-        </main>   
+        </div>   
     )
 }

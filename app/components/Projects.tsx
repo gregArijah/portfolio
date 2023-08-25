@@ -90,7 +90,7 @@ export default function Projects() {
             ];
 
     return (
-        <main className="flex flex-col justify-between p-5 space-y-2" id="projects">
+        <div className="flex flex-col justify-between p-5 space-y-2" id="projects">
     
                 <p className="text-md font-bold">Projects</p> 
                     
@@ -126,7 +126,7 @@ export default function Projects() {
                 })}
             
                 
-        </main>
+        </div>
     )
 
 
