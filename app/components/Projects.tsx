@@ -92,7 +92,7 @@ export default function Projects() {
     return (
         <div className="flex flex-col justify-between p-5 space-y-2" id="projects">
     
-                <p className="text-md font-bold">Projects</p> 
+                <p className="text-lg font-bold">Projects</p> 
                     
                 {projects.map((project, index) => {
                     return ( 
@@ -107,15 +107,15 @@ export default function Projects() {
                                     <p className="text-sm text-justify mr-3">{project.name} {project.description}</p>
                                     <p className="hidden sm:block">
                                         {project.tech.map((tech, index) => {
-                                            return (<span key={index} className="text-xs font-bold bg-blue-900 rounded-md p-1 mr-1">{tech} </span>)
+                                            return (<span key={index} className="text-xs font-bold bg-slate-300 text-slate-800 rounded-md p-0.5 mr-1">{tech} </span>)
                                         })}
                                     </p>
                                 </div>
-                                <p className="h-min hidden sm:flex border border-black rounded"><Image src={project.image} className="rounded" height="600" width="600" alt="projects"/></p>
-                                <p className="sm:hidden max-w-max border border-black rounded"><Image src={project.image} className="rounded" height="350" width="350" alt="projects"/></p>
+                                <p className="h-min hidden sm:flex border border-slate-300 rounded"><Image src={project.image} className="rounded" height="600" width="600" alt="projects"/></p>
+                                <p className="sm:hidden max-w-max border border-slate-400 rounded"><Image src={project.image} className="rounded" height="350" width="350" alt="projects"/></p>
                                 <p className="block sm:hidden">
                                         {project.tech.map((tech, index) => {
-                                            return (<span key={index} className="text-xs font-bold bg-blue-900 rounded-md p-1 mr-1">{tech} </span>)
+                                            return (<span key={index} className="text-xs font-bold bg-slate-300 text-slate-800 rounded-md p-1 mr-1">{tech} </span>)
                                         })}
                                     </p>
                             </div>

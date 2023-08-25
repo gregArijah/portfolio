@@ -13,7 +13,7 @@ export default function Home() {
   
 
   return (
-    <main>
+    <main className='bg-slate-800 text-slate-200'>
         {/* small & medium screen layout */}
         <div className='sm:px-24 lg:hidden'>
             < Navbar />
