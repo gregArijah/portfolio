@@ -88,46 +88,104 @@ export default function Projects() {
                     github: "https://github.com/gregArijah/challenge-3-password-generator"    
                 },
             ];
-
-    return (
-        <div className="flex flex-col justify-between p-5 space-y-2" id="projects">
+return (
+  <div className="flex flex-col justify-between p-5 space-y-2" id="projects">
+    {/* Section title */}
+    <p className="text-lg font-bold">Projects</p>
     
-                <p className="text-lg font-bold">Projects</p> 
-                    
-                {projects.map((project, index) => {
-                    return ( 
-                        <div  key ={index} className="w-full space-y-1 pb-8">
-                            <p className="font-bold space-x-3">
-                                <span>{project.name}</span> 
-                                <span><Link href={project.link}>{internetIcon}</Link></span>
-                                <span><Link href={project.github}>{githubIcon}</Link></span>
-                            </p>
-                            <div className="flex flex-col sm:flex-row space-y-2">    
-                                <div className="flex flex-col space-y-2">
-                                    <p className="text-sm text-justify mr-3">{project.name} {project.description}</p>
-                                    <p className="hidden sm:block">
-                                        {project.tech.map((tech, index) => {
-                                            return (<span key={index} className="inline-flex text-xs font-bold bg-slate-300 text-slate-800 rounded-md p-0.5 mr-1">{tech} </span>)
-                                        })}
-                                    </p>
-                                </div>
-                                <p className="h-min hidden sm:flex border border-slate-300 rounded"><Image src={project.image} className="rounded" height="600" width="600" alt="projects"/></p>
-                                <p className="sm:hidden max-w-max border border-slate-400 rounded"><Image src={project.image} className="rounded" height="350" width="350" alt="projects"/></p>
-                                <p className="block sm:hidden">
-                                        {project.tech.map((tech, index) => {
-                                            return (<span key={index} className="inline-flex text-xs font-bold bg-slate-300 text-slate-800 rounded-md p-0.5 mr-1">{tech} </span>)
-                                        })}
-                                    </p>
-                            </div>
-                            
-                            
-                        </div>
-                        )
+    {/* Mapping through the 'projects' array */}
+    {projects.map((project, index) => {
+      return (
+        <div key={index} className="w-full space-y-1 pb-8">
+          {/* Project name and links */}
+          <p className="font-bold space-x-3">
+            <span>{project.name}</span>
+            {/* Links to external project and GitHub */}
+            <span><Link href={project.link} target="_blank">{internetIcon}</Link></span>
+            <span><Link href={project.github} target="_blank">{githubIcon}</Link></span>
+          </p>
+          <div className="flex flex-col sm:flex-row space-y-2">
+            {/* Project description and technologies */}
+            <div className="flex flex-col space-y-2">
+              <p className="text-sm text-justify mr-3">{project.name} {project.description}</p>
+              {/* Displaying technologies (hidden on small screens) */}
+              <p className="hidden sm:block">
+                {project.tech.map((tech, index) => {
+                  return (
+                    <span key={index} className="inline-flex text-xs font-bold bg-slate-300 text-slate-800 rounded-md p-0.5 mr-1">{tech} </span>
+                  )
                 })}
+              </p>
+            </div>
+            
+            {/* Project image (shown on larger screens) */}
+            <p className="h-min hidden sm:flex border border-slate-300 rounded">
+              <Link href={project.link} target="_blank">
+                  <Image src={project.image} className="rounded" height="600" width="600" alt="projects"/>
+              </Link>
+            </p>
+            
+            {/* Project image (shown on small screens) */}
+            <p className="sm:hidden max-w-max border border-slate-400 rounded">
+              <Link href={project.link} target="_blank">
+                  <Image src={project.image} className="rounded" height="350" width="350" alt="projects"/>
+              </Link>
+            </p>
+            
+            {/* Displaying technologies (visible only on small screens) */}
+            <p className="block sm:hidden">
+              {project.tech.map((tech, index) => {
+                return (
+                  <span key={index} className="inline-flex text-xs font-bold bg-slate-300 text-slate-800 rounded-md p-0.5 mr-1">{tech} </span>
+                )
+              })}
+            </p>
+          </div>
+        </div>
+      )
+    })}
+  </div>
+)
+
+    // return (
+    //     <div className="flex flex-col justify-between p-5 space-y-2" id="projects">
+    
+    //             <p className="text-lg font-bold">Projects</p> 
+                    
+    //             {projects.map((project, index) => {
+    //                 return ( 
+    //                     <div  key ={index} className="w-full space-y-1 pb-8">
+    //                         <p className="font-bold space-x-3">
+    //                             <span>{project.name}</span> 
+    //                             <span><Link href={project.link}>{internetIcon}</Link></span>
+    //                             <span><Link href={project.github}>{githubIcon}</Link></span>
+    //                         </p>
+    //                         <div className="flex flex-col sm:flex-row space-y-2">    
+    //                             <div className="flex flex-col space-y-2">
+    //                                 <p className="text-sm text-justify mr-3">{project.name} {project.description}</p>
+    //                                 <p className="hidden sm:block">
+    //                                     {project.tech.map((tech, index) => {
+    //                                         return (<span key={index} className="inline-flex text-xs font-bold bg-slate-300 text-slate-800 rounded-md p-0.5 mr-1">{tech} </span>)
+    //                                     })}
+    //                                 </p>
+    //                             </div>
+    //                             <p className="h-min hidden sm:flex border border-slate-300 rounded"><Image src={project.image} className="rounded" height="600" width="600" alt="projects"/></p>
+    //                             <p className="sm:hidden max-w-max border border-slate-400 rounded"><Image src={project.image} className="rounded" height="350" width="350" alt="projects"/></p>
+    //                             <p className="block sm:hidden">
+    //                                     {project.tech.map((tech, index) => {
+    //                                         return (<span key={index} className="inline-flex text-xs font-bold bg-slate-300 text-slate-800 rounded-md p-0.5 mr-1">{tech} </span>)
+    //                                     })}
+    //                                 </p>
+    //                         </div>
+                            
+                            
+    //                     </div>
+    //                     )
+    //             })}
             
                 
-        </div>
-    )
+    //     </div>
+    // )
 
 
 }
