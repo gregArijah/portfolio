@@ -26,7 +26,7 @@ export default function Projects() {
                     name: "MotoMetrix",
                     description: "is a digital dashboard; an arduino project which collects and displays sensor data. During the pandemic I learned to weld, and after a successful go-kart build, I built a dashboard using the arduino controller.",
                     image: "/images/projects/speedway.jpg",
-                    link: "https://github.com/gregArijah/digital-dashboard/",
+                    link: "https://gregarijah.github.io/digital-dashboard/",
                     github: "https://github.com/gregArijah/digital-dashboard/",
                     tech: ["C++", "Arduino"]
                 },
