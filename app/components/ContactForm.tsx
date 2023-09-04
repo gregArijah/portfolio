@@ -62,7 +62,7 @@ export default function ContactForm() {
     <section className="pl-5 mb-16">
       <div>
         <p className="text-lg mb-2">
-          Send a message and let's connect!<br/> 
+          Send a message and let&apos;s connect!<br/> 
         </p>
         <div className="">
           <form className="space-y-2" onSubmit={handleSubmit}>
