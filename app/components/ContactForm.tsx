@@ -64,8 +64,11 @@ export default function ContactForm() {
         <p className="text-lg mb-2 hidden lg:block">
           Send a message and let&apos;s connect!<br/> 
         </p>
-        <p className="text-lg mb-2 lg:hidden font-bold ">
+        <p className="text-lg lg:hidden font-bold ">
           Let&apos;s connect!<br/> 
+        </p>
+        <p className="mb-2 lg:hidden">
+          Send me a message and I&apos;ll reply as soon as possible.<br/> 
         </p>
         <div className="">
           <form className="space-y-2" onSubmit={handleSubmit}>
