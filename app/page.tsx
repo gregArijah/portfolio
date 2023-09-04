@@ -22,6 +22,7 @@ export default function Home() {
             < About /> 
             < TechStack />
             < Projects />
+            < ContactForm />
             
         </div>
         {/* large screen layout */}

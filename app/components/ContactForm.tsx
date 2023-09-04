@@ -59,10 +59,13 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="pl-5 mb-16">
+    <section className="pl-5 pb-32" id="connect">
       <div>
-        <p className="text-lg mb-2">
+        <p className="text-lg mb-2 hidden lg:block">
           Send a message and let&apos;s connect!<br/> 
+        </p>
+        <p className="text-lg mb-2 lg:hidden font-bold ">
+          Let&apos;s connect!<br/> 
         </p>
         <div className="">
           <form className="space-y-2" onSubmit={handleSubmit}>
@@ -76,7 +79,7 @@ export default function ContactForm() {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="mt-1 p-.5 w-11/12 border rounded-lg bg-slate-300 text-slate-800 focus:ring focus:ring-slate-300"
+                className="mt-1 p-.5 w-full lg:w-11/12 border rounded-lg bg-slate-300 text-slate-800 focus:ring focus:ring-slate-300"
               />
             </div>
             <div>
@@ -89,7 +92,7 @@ export default function ContactForm() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="mt-1 p-.5 w-11/12 border rounded-lg bg-slate-300 text-slate-800 focus:ring focus:ring-slate-300"
+                className="mt-1 p-.5 w-full lg:w-11/12 border rounded-lg bg-slate-300 text-slate-800 focus:ring focus:ring-slate-300"
               />
             </div>
             <div>
@@ -102,7 +105,7 @@ export default function ContactForm() {
                 rows={4}
                 value={formData.message}
                 onChange={handleChange}
-                className="mt-1 p-.5 w-11/12 border rounded-lg bg-slate-300 text-slate-800 focus:ring focus:ring-slate-300"
+                className="mt-1 p-.5 w-full lg:w-11/12 border rounded-lg bg-slate-300 text-slate-800 focus:ring focus:ring-slate-300"
               ></textarea>
             </div>
             <div>

@@ -10,7 +10,7 @@ export default function Navbar() {
                     <a href="#about">about_me</a> 
                     <a href="#tech">tech_stack</a> 
                     <a href="#projects">projects</a>
-                    {/* <a href="#contact">contact_me</a> */}
+                    <a href="#connect">connect</a>
             </div>
             {/* large screens */}
             <div className={`hidden lg:flex flex-col text-md justify-start text-left p-5 mt-24 w-max  space-y-4`}>
