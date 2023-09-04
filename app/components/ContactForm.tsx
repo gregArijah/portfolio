@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 //const sendEmail = async ({ name, email, message }:any) => {
 const sendEmail = async (formData:any) => {
   try{
-      const res = await fetch('/api/contact', {
+      const res = await fetch('/api/contactForm', {
         body: JSON.stringify(formData),
         headers: {
           'Content-Type': 'application/json',

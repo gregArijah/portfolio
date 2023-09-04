@@ -23,7 +23,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
     const message = {
         from: process.env.GMAIL_EMAIL_ADDRESS,
         to: process.env.GMAIL_EMAIL_ADDRESS,
-        subject: 'Veleron: New message from ' + name,
+        subject: 'Portfolio: New message from ' + name,
         text: `Name: ${name} \nEmail: ${email} \nMessage: ${msg}`,
         html: htmlOut,
   };
