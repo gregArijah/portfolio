@@ -7,7 +7,7 @@ export default function TechStack() {
         <div className="flex flex-col justify-between p-5 space-y-2" id="tech">
                 <p className="text-lg font-bold">Tech Stack</p>
                 <p className="text-sm">I have experience with the following technologies:</p>
-                <div className="grid grid-cols-6 md:grid-cols-12 lg:grid-cols-12 text-sm gap-x-4 sm:gap-x-2 gap-y-2 w-11/12 sm:w-full md:hidden">
+                <div className="grid grid-cols-6 md:grid-cols-12  text-sm gap-x-4 sm:gap-x-2 gap-y-2 w-11/12 sm:w-full md:hidden">
                     <Image src="/images/techstack/005-nodejs.png" height="48" width="48" alt=""/>
                     <Image src="/images/techstack/expressjs.png" height="48" width="48" alt=""/>
                     <Image src="/images/techstack/nextjs.jpg" height="48" width="48" alt=""/>

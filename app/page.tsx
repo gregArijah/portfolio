@@ -17,7 +17,7 @@ export default function Home() {
         {/* small & medium screen layout */}
         <div className='sm:px-24 lg:hidden'>
             < Navbar />
-            < Header />
+            < Header /> {/* contact is included in header for small & medium screen layout */}
             < About /> 
             < TechStack />
             < Projects />
