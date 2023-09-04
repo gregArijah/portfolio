@@ -29,6 +29,11 @@ export default function ContactForm() {
 
   const handleSubmit = async(e:any) => {
     e.preventDefault();
+    // check if form has been filled out
+    if(!formData.name || !formData.email || !formData.message){
+        alert('Please fill out all fields');
+        return;
+    }
     // Perform form submission logic here
     try{
       const req = await sendEmail(formData);
@@ -54,16 +59,15 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="bg-gray-100 py-16">
-      <div className="container mx-auto text-center px-2 md:px-0">
-        <h2 className="text-3xl font-semibold mb-4">Get in Touch</h2>
-        <p className="text-gray-600 mb-8">
-          Have questions? Need more information? Contact us today!
+    <section className="pl-5 mb-16">
+      <div>
+        <p className="text-lg mb-2">
+          Send a message and let's connect!<br/> 
         </p>
-        <div className="max-w-md mx-auto">
-          <form className="space-y-4" onSubmit={handleSubmit}>
+        <div className="">
+          <form className="space-y-2" onSubmit={handleSubmit}>
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="name" className="block text-sm font-medium">
                 Name
               </label>
               <input
@@ -72,11 +76,11 @@ export default function ContactForm() {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="mt-1 p-2 w-full border rounded-lg focus:ring focus:ring-blue-300"
+                className="mt-1 p-.5 w-11/12 border rounded-lg bg-slate-300 text-slate-800 focus:ring focus:ring-slate-300"
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="email" className="block text-sm font-medium">
                 Email
               </label>
               <input
@@ -85,11 +89,11 @@ export default function ContactForm() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="mt-1 p-2 w-full border rounded-lg focus:ring focus:ring-blue-300"
+                className="mt-1 p-.5 w-11/12 border rounded-lg bg-slate-300 text-slate-800 focus:ring focus:ring-slate-300"
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="message" className="block text-sm font-medium">
                 Message
               </label>
               <textarea
@@ -98,14 +102,14 @@ export default function ContactForm() {
                 rows={4}
                 value={formData.message}
                 onChange={handleChange}
-                className="mt-1 p-2 w-full border rounded-lg focus:ring focus:ring-blue-300"
+                className="mt-1 p-.5 w-11/12 border rounded-lg bg-slate-300 text-slate-800 focus:ring focus:ring-slate-300"
               ></textarea>
             </div>
             <div>
               <button
                 type="submit"
-                className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 disabled:bg-gray-400"
-                disabled={!formData.name || !formData.email || !formData.message}
+                className="px-4 py-1 bg-slate-300 text-slate-800 font-bold rounded-lg hover:bg-slate-500 transition duration-300 disabled:bg-gray-400"
+                // disabled={!formData.name || !formData.email || !formData.message}
               >
                 Send Message
               </button>
@@ -116,4 +120,3 @@ export default function ContactForm() {
     </section>
   );
 }
-

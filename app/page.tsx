@@ -8,6 +8,7 @@ import About from './components/About'
 import TechStack from './components/TechStack'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import ContactForm from './components/ContactForm'
 
 export default function Home() {
   
@@ -29,10 +30,10 @@ export default function Home() {
             <div className='flex px-20 py-10 space-x-2'>
                 <section className='w-5/12'>
 
-                    <div className='fixed'>
+                    <div className='fixed flex flex-col h-full justify-between'>
                       < Header />
-                      < Navbar />
                       < Contact />
+                      < ContactForm />
                     </div> 
                 </section>
                 <section className='w-7/12 pt-5 float-right'>
