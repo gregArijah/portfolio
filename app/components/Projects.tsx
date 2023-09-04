@@ -41,53 +41,7 @@ export default function Projects() {
                 },
             ];
 
-    let bootcamp = [
-                {
-                    name: "Emperor's Dish Restaurant",
-                    description: "A full stack restaurant app that allows users to view the menu, place orders. It also allows the restaurant to manage their menu information.",
-                    image: "/images/projects/emperors_dish.png",
-                    link: "https://emperors-dish-app.herokuapp.com/",
-                    github: ""
-                },
-                {
-                    name: "Social Network API",
-                    description: "An SQL back end for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.",
-                    image: "/images/projects/social_network_api.jpeg",
-                    link: "https://drive.google.com/file/d/1RoycjaPsk8E1S74Ppugd6MisYlxK5ODc/view"
-                },
-                {
-                    name: "E-Commerce Backend",
-                    description: "A noSQL back end for an e-commerce site to track and perform CRUD operations on products, categories, and tags. ",
-                    image: "/images/projects/ecommerce_backend.jpeg",
-                    link: "https://drive.google.com/file/d/1GUHcmWtSXxZi5MqFKBizJhMTyS2hSbhb/view"
-                },
-                {
-                    name: "Weather Dashboard",
-                    description: "A weather dashboard that runs in the browser and features dynamically updated HTML and CSS.",
-                    image: "/images/projects/weather_dashboard.jpeg",
-                    link: "https://gregarijah.github.io/challenge-6-weather-dashboard/"
-                },
-                {
-                    name: "Team Profile Generator",
-                    description: "A Node.js command-line application that takes in information about employees on a team, then generates an HTML webpage that displays summaries for each person.",
-                    image: "/images/projects/team_profile.jpeg",
-                    link: "https://drive.google.com/file/d/1LF9vyzf8_zUaKiBWMi5ACeH7eV0KrdZE/view"
-                },
-                {
-                    name: "JavaScript Challenge",
-                    description: "A timed coding quiz with multiple-choice questions. This app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code.",
-                    image: "/images/projects/coding_quiz.jpeg",
-                    link: "https://gregarijah.github.io/challenge-4-javascript-quiz/",
-                
-                },
-                {
-                    name: "Password Generator",
-                    description: "An application that generates a random password based on user-selected criteria. This app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code.",
-                    image: "/images/projects/password_generator.jpeg",
-                    link: "https://gregarijah.github.io/challenge-3-password-generator/develop/",
-                    github: "https://github.com/gregArijah/challenge-3-password-generator"    
-                },
-            ];
+   
 return (
   <div className="flex flex-col justify-between p-5 space-y-2" id="projects">
     {/* Section title */}
