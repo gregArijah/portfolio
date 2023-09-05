@@ -10,9 +10,9 @@ export default function Header() {
             <div className="lg:hidden flex justify-between pl-5 pt-5" >
                 <div className="flex flex-col justify-between py-3">    
                     <div className="flex flex-col justify-center">
-                        <p className="text-lg font-bold pb-1 pt-8">Greg Arijah</p>
-                        <p className="text-sm">Software Developer</p>
-                        <p className="text-sm">Toronto, Canada</p>
+                        <p className="text-2xl sm:text-4xl font-bold pb-1 pt-8">Greg Arijah</p>
+                        <p className="text-md sm:text-xl">Software Developer</p>
+                        <p className="text-md sm:text-xl">Toronto, Canada</p>
                     
                     </div>
                     <div className="">

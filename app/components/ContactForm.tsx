@@ -59,7 +59,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="pl-5 pb-32" id="connect">
+    <section className="px-5 pb-32" id="connect">
       <div>
         <p className="text-lg mb-2 hidden lg:block">
           Send a message and let&apos;s connect!<br/> 
