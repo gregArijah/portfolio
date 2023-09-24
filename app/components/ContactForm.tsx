@@ -1,26 +1,29 @@
-'use client'
 
 import React, { useState } from 'react';
+import { SubmitButton } from '../ui_components/submit-button';
+
 
 //const sendEmail = async ({ name, email, message }:any) => {
-const sendEmail = async (formData:any) => {
-  try{
-      const res = await fetch('/api/contactForm', {
-        body: JSON.stringify(formData),
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        method: 'POST',
-      });
-      const text = await res.text();
-} catch(err){
-      throw err
-}
 
-
-}
 
 export default function ContactForm() {
+  const [buttonStatus, setButtonStatus] = useState('Send Message')
+
+  const sendEmail = async (formData:any) => {
+    try{
+          const res = await fetch('/api/contactForm', {
+            body: JSON.stringify(formData),
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            method: 'POST',
+          });
+          const text = await res.text();
+      } catch(err){
+          throw err
+    }
+  };
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -28,7 +31,7 @@ export default function ContactForm() {
   });
 
   const handleSubmit = async(e:any) => {
-    e.preventDefault();
+   //e.preventDefault();
     // check if form has been filled out
     if(!formData.name || !formData.email || !formData.message){
         alert('Please fill out all fields');
@@ -42,13 +45,35 @@ export default function ContactForm() {
         email: '',
         message: '',
       });
-      alert('Message sent successfully')
+      
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }catch(err){
       throw err
     }
-    
+    alert('Message sent successfully')
   };
+  // const handleSubmit = async(e:any) => {
+  //   e.preventDefault();
+  //   // check if form has been filled out
+  //   if(!formData.name || !formData.email || !formData.message){
+  //       alert('Please fill out all fields');
+  //       return;
+  //   }
+  //   // Perform form submission logic here
+  //   try{
+  //     const req = await sendEmail(formData);
+  //     setFormData({
+  //       name: '',
+  //       email: '',
+  //       message: '',
+  //     });
+  //     alert('Message sent successfully')
+  //     window.scrollTo({ top: 0, behavior: 'smooth' });
+  //   }catch(err){
+  //     throw err
+  //   }
+    
+  // };
 
   const handleChange = (e:any) => {
     const { name, value } = e.target;
@@ -71,7 +96,7 @@ export default function ContactForm() {
           Send me a message and I&apos;ll reply as soon as possible.<br/> 
         </p>
         <div className="">
-          <form className="space-y-2" onSubmit={handleSubmit}>
+          <form className="space-y-2"  action={handleSubmit}>
             <div>
               <label htmlFor="name" className="block text-sm font-medium">
                 Name
@@ -111,7 +136,7 @@ export default function ContactForm() {
                 className="mt-1 p-.5 w-full lg:w-11/12 border rounded-lg bg-slate-300 text-slate-800 focus:ring focus:ring-slate-300"
               ></textarea>
             </div>
-            <div>
+            {/* <div>
               <button
                 type="submit"
                 className="px-4 py-1 bg-slate-300 text-slate-800 font-bold rounded-lg hover:bg-slate-500 transition duration-300 disabled:bg-gray-400"
@@ -119,7 +144,9 @@ export default function ContactForm() {
               >
                 Send Message
               </button>
-            </div>
+              
+            </div> */}
+            <SubmitButton />
           </form>
         </div>
       </div>

@@ -10,7 +10,7 @@ export default function Header() {
             <div className="lg:hidden flex justify-between pl-5 pt-5" >
                 <div className="flex flex-col justify-between py-3">    
                     <div className="flex flex-col justify-center">
-                        <p className="text-2xl sm:text-4xl font-bold pb-1 pt-8">Greg Arijah</p>
+                        <p className="text-2xl sm:text-4xl font-bold pb-1 pt-8">Greg Griffith</p>
                         <p className="text-md sm:text-xl">Software Developer</p>
                         <p className="text-md sm:text-xl">Toronto, Canada</p>
                     
@@ -26,7 +26,7 @@ export default function Header() {
             {/* large screens */}
             <div className="hidden lg:flex justify-between pl-5 pt-5 space-x-4" >
                 <div className="flex flex-col justify-center space-y-3">
-                    <p className="text-4xl font-bold pb-1 pt-8">Greg Arijah</p>
+                    <p className="text-4xl font-bold pb-1 pt-8">Greg Griffith</p>
                     
                     <div className="space-y-1">
                         <p className="text-xl">Software Developer</p>
